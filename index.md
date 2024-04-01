@@ -12,9 +12,8 @@ This Summer, I'll be participating in JPMorgan's Markets Internship Program in N
 <!-- Upload your own photo and change the path -->
 
 <p style="text-align:center;">
-  <img class="img-circle" src="https://github.com/masonschick/masonschick.github.io/raw/master/images/ProfilePhoto.png" width="50%">
+  <img class="img-circle" src="https://github.com/masonschick/masonschick.github.io/blob/master/images/ProfilePhoto.jpg" width="50%">
 </p>
-
 ---
 
 ## Portfolio

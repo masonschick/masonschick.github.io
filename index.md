@@ -21,7 +21,7 @@ This Summer, I'll be participating in JPMorgan's Markets Internship Program in N
 
 <!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
 
-_**[Natural language processing 10-Ks to identify risks](midterm_summary)**_
+_**[Data Science Midterm: Natural Language Processing 10-Ks to Identify Risks](midterm_summary)**_
 
 You can show off your midterm analysis by moving the report components and output into this file. Or...
 

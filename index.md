@@ -1,13 +1,18 @@
 ## About Me
 
-What's up? hey\|you
+I am from Ridgewood, NJ
 
-I am an awesome student at Lehigh, you should hire me!
+Currently, I am a Junior at Lehigh in Bethlehem, PA
+
+At Lehigh, I am pursuing a Finance major and Computer Science minor
+
+This Summer, I'll be participating in JPMorgan's Markets Internship Program in New York City
+
 
 <!-- Upload your own photo and change the path -->
 
 <p style="text-align:center;">
-  <img class="img-circle" src="https://github.com/donbowen/donbowen.github.io/raw/master/images/logo.png" width="50%">
+  <img class="img-circle" src="https://github.com/masonschick/masonschick.github.io/raw/master/images/ProfilePhoto.png" width="50%">
 </p>
 
 ---

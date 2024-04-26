@@ -4,9 +4,7 @@ I am from Ridgewood, NJ
 
 Currently, I am a Junior at Lehigh in Bethlehem, PA
 
-At Lehigh, I am pursuing a Finance major and Computer Science minor
-
-This Summer, I'll be participating in JPMorgan's Markets Internship Program in New York City
+At Lehigh, I am pursuing a Finance major and Financial Technology Minor
 
 
 <!-- Upload your own photo and change the path -->

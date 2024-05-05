@@ -22,7 +22,7 @@ _**[Data Science Midterm: Natural Language Processing 10-Ks to Identify Risks](r
 
 This midterm predicts S&P 500 company performance around their 10-K reports based on the sentiment of the reports. My midterm failed to achieve sentiment scores based on the actual 10Ks but used randomly generated scores to simulate the process and analyze the expected results vs the shortcomings of the actual deliverable.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/personalwebsitemidterm.png?raw=true"/>
 
 ---
 

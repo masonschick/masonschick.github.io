@@ -26,14 +26,6 @@ This midterm predicts S&P 500 company performance around their 10-K reports base
 
 ---
 
-_**[Regression Practice](Regression_practice)**_
-
-Or: The process that created this page can be used to show off your whole midterm analysis file, as is.
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
 _**[Final Project Dashboard: Custom Built Models Using Machine Learning to Predict Loan Defaults](https://phfxeoenukjbktk4bibykr.streamlit.app/)**_
 
 <img src="images/dashboardimage.png?raw=true"/>

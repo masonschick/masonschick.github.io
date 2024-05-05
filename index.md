@@ -40,23 +40,15 @@ _**[Final Project Dashboard: Custom Built Models Using Machine Learning to Predi
 
 ---
 
-_**[Some personal project](/pdf/sample_presentation.pdf)**_
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
 ## Career Objectives
 
-Write what you want. 
-
-Sell yourself!
+I am interning in a markets program this Summer at J.P. Morgan. I will be specializing in credit research, and I look to earn a full time offer this Summer.
 
 ---
 
 ## Hobbies
 
-Maybe include a little about these, especially if they are the kinds of things that work well in interviews.
+I am like hockey and am a fan of the New Jersey Devils. I no longer play hockey, but I like to run and recently did my first half marathon in Brookly. I am also interested in music, and I play the Guitar and Piano. I also look to cook, and I specialize in breakfast burritos.
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>

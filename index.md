@@ -48,7 +48,8 @@ I am interning in a markets program this Summer at J.P. Morgan. I will be specia
 
 ## Hobbies
 
-I am like hockey and am a fan of the New Jersey Devils. I no longer play hockey, but I like to run and recently did my first half marathon in Brookly. I am also interested in music, and I play the Guitar and Piano. I also look to cook, and I specialize in breakfast burritos.
+I am like hockey and am a fan of the New Jersey Devils. I no longer play hockey, but I like to run and recently did my first half marathon in Brooklyn. 
+I am also interested in music. I play the Guitar and Piano. I also like to cook, and I specialize in breakfast burritos.
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>

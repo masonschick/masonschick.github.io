@@ -9,6 +9,7 @@ At Lehigh, I am pursuing a Finance major and Financial Technology Minor
 
 <!-- Upload your own photo and change the path -->
 
+---
 
 ## Portfolio
 

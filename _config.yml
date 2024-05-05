@@ -1,14 +1,12 @@
 title: Mason Schick # your name (or website title) here
 logo: "/images/ProfilePhoto.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  # Edit these links below   
   <br>
-  # in _config.yml 
   <br><br>
   <a href="https://www.linkedin.com/in/mason-schick/">LinkedIn</a> 
-  <br>
+  <br><br>
   <a href="images/MasonSchick_Resume_4-1-24.pdf" class="btn btn--info">Resume</a>  
-  <br>
+  <br><br>
   <a href="https://www.GitHub.com/masonschick/">GitHub</a>  
   <br>
   

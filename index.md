@@ -18,7 +18,7 @@ At Lehigh, I am pursuing a Finance major and Financial Technology Minor
 
 <!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
 
-_**[Data Science Midterm: Natural Language Processing 10-Ks to Identify Risks](report.md)**_
+_**[Data Science Midterm: Analyzing Expected Risks Based on Natural Language Processing 10-Ks](report.md)**_
 
 This midterm predicts S&P 500 company performance around their 10-K reports based on the sentiment of the reports. My midterm failed to achieve sentiment scores based on the actual 10Ks but used randomly generated scores to simulate the process and analyze the expected results vs the shortcomings of the actual deliverable.
 

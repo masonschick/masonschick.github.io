@@ -1,6 +1,5 @@
 ---
-layout: wide_default
----  
+layout: wide_default---
 
 # Report File
 

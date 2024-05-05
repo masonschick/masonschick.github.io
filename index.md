@@ -34,7 +34,7 @@ Or: The process that created this page can be used to show off your whole midter
 
 ---
 
-_**[Eventual team project](https://donbowen.github.io/teamproject/)**_
+_**[Final Project Dashboard: Custom Built Models Using Machine Learning to Predict Loan Defaults](https://phfxeoenukjbktk4bibykr.streamlit.app/)**_
 
 <img src="images/dashboardimage.png?raw=true"/>
 

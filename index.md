@@ -23,7 +23,7 @@ This midterm predicts S&P 500 company performance around their 10-K reports base
 
 ---
 
-_**[Final Project Dashboard: Custom Built Models Using Machine Learning to Predict Loan Defaults](https://phfxeoenukjbktk4bibykr.streamlit.app/)**_
+_**[Final Project Dashboard: Custom Built Models Using Machine Learning to Predict Loan Defaults](https://loandefaultcustommodel.streamlit.app/)**_
 
 This final project utilizes a dataset we used in class for our machine learning lectures. The dataset consists of 2013 loan data. We took the data, cleaned it, and used it to create a dashboard that allows users to customize the machine learning criteria they use in predicting loan defaults. We assess the accuracy of the model based on the actual loan defaults in our data, and display the results visualy with a confusion matrix. Results are then ranked on a leaderboard with prior custom models build on our dashboard.
 
@@ -33,14 +33,14 @@ This final project utilizes a dataset we used in class for our machine learning 
 
 ## Career Objectives
 
-I am interning in a markets program this Summer at J.P. Morgan. I will be specializing in credit research, and I look to earn a full time offer this Summer.
+I am interning in a markets program this Summer at J.P. Morgan. I will be specializing in credit research, and I look forward to learning in their specialized program.
 
 ---
 
 ## Hobbies
 
-I am like hockey and am a fan of the New Jersey Devils. I no longer play hockey, but I like to run and recently did my first half marathon in Brooklyn. 
-I am also interested in music. I play the Guitar and Piano. I also like to cook, and I specialize in breakfast burritos.
+I like hockey, and I am a fan of the New Jersey Devils. These days I no longer play hockey, so I've started to run, and I recently did my first half marathon in Brooklyn! 
+I am also interested in music. Specifically, I am learning the Guitar and Piano. I enjoy cooking as well, and I specialize in breakfast burritos!
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>

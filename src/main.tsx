@@ -67,7 +67,7 @@ const projects: Project[] = [
       "The private operating environment stays separate from the public portfolio surface."
     ],
     stack: ["Next.js", "TypeScript", "Supabase", "Vercel"],
-    links: [],
+    links: [{ label: "Live project", href: "https://info-os-sand.vercel.app/" }],
     image: "/project-images/info-os-light.png",
     imageAlt: "Light interface preview of the Markets Research Platform"
   },
@@ -81,7 +81,7 @@ const projects: Project[] = [
       "The public version will keep the interesting product shape while removing private league data."
     ],
     stack: ["Next.js", "Supabase", "Vercel", "TypeScript"],
-    links: [{ label: "GitHub", href: "https://github.com/masonschick/Hockey" }],
+    links: [{ label: "Live project", href: "https://hockey-eight.vercel.app/" }],
     image: "/project-images/cup-chase.png",
     imageAlt: "Light interface preview of the Cup Chase fantasy hockey dashboard"
   },

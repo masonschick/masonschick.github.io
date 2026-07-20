@@ -28,7 +28,7 @@ The former GitHub Pages deployment is retired. Its Jekyll/class source is preser
 ## Content Notes
 
 - The current resume PDF is served from a stable public URL so future replacements do not break external links.
-- Cup Chase has a GitHub link; add its public demo URL once the safe version is ready.
-- Markets Research Platform and Personal Dashboard are intentionally non-clickable until public-safe versions exist.
+- Markets Research Platform and Cup Chase link directly to their public deployments.
+- Personal Dashboard is intentionally non-clickable until a public-safe version exists.
 - Project visuals live in `public/project-images/` and share one light-mode miniature-interface language.
 - The site theme follows Chicago sunrise and sunset automatically; there is no manual theme control.

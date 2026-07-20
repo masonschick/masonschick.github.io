@@ -58,6 +58,20 @@ const experiences: Experience[] = [
 
 const projects: Project[] = [
   {
+    title: "Markets Research Platform",
+    summary:
+      "A research platform for turning market information into structured notes, analytical frameworks, data studies, and decision-ready views.",
+    details: [
+      "Connects market notes, mental models, research artifacts, public-data charting, and prediction-market signals in one system.",
+      "Built around recurring workflows that link macro data, company analysis, policy expectations, and changing market narratives.",
+      "The private operating environment stays separate from the public portfolio surface."
+    ],
+    stack: ["Next.js", "TypeScript", "Supabase", "Vercel"],
+    links: [],
+    image: "/project-images/info-os-light.png",
+    imageAlt: "Light interface preview of the Markets Research Platform"
+  },
+  {
     title: "Cup Chase",
     summary:
       "A deployed fantasy hockey product with live data, league workflows, and a small group of active users.",
@@ -70,20 +84,6 @@ const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/masonschick/Hockey" }],
     image: "/project-images/cup-chase.png",
     imageAlt: "Light interface preview of the Cup Chase fantasy hockey dashboard"
-  },
-  {
-    title: "Info OS",
-    summary:
-      "A personal knowledge operating system that turns an information diet into durable notes, mental models, research artifacts, and data studies.",
-    details: [
-      "Connects Wiki inputs, Atlas mental models, portable artifacts, and a reusable public-data charting layer in one system.",
-      "Built around recurring research workflows rather than one-off dashboards.",
-      "The private operating environment stays separate from the public portfolio surface."
-    ],
-    stack: ["Next.js", "TypeScript", "Supabase", "Vercel"],
-    links: [],
-    image: "/project-images/info-os-light.png",
-    imageAlt: "Info OS light-mode newspaper interface preview"
   },
   {
     title: "Personal Dashboard",

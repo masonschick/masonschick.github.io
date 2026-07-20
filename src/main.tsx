@@ -199,7 +199,9 @@ function ProjectItem({ project }: { project: Project }) {
         </ul>
       </div>
       <aside className="artifact-side project-side">
-        <img className="project-image" src={project.image} alt={project.imageAlt} />
+        <div className="project-image-frame">
+          <img className="project-image" src={project.image} alt={project.imageAlt} />
+        </div>
       </aside>
     </article>
   );

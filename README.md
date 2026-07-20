@@ -23,7 +23,7 @@ The canonical site is [masonschick.vercel.app](https://masonschick.vercel.app).
 
 Vercel is connected to the `masonschick/masonschick.github.io` repository. Pushes to `main` build and publish the production site automatically.
 
-The previous Jekyll/class site is preserved on the remote `legacy-2024` branch.
+The former GitHub Pages deployment is retired. Its Jekyll/class source is preserved on the remote `legacy-2024` branch.
 
 ## Content Notes
 

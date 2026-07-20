@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
@@ -19,8 +19,8 @@ type Project = {
   details: string[];
   stack: string[];
   links: { label: string; href: string }[];
-  image?: string;
-  imagePlaceholder?: string;
+  image: string;
+  imageAlt: string;
 };
 
 const experiences: Experience[] = [
@@ -58,7 +58,7 @@ const experiences: Experience[] = [
 
 const projects: Project[] = [
   {
-    title: "Fantasy Hockey Web App",
+    title: "Cup Chase",
     summary:
       "A deployed fantasy hockey product with live data, league workflows, and a small group of active users.",
     details: [
@@ -68,7 +68,22 @@ const projects: Project[] = [
     ],
     stack: ["Next.js", "Supabase", "Vercel", "TypeScript"],
     links: [{ label: "GitHub", href: "https://github.com/masonschick/Hockey" }],
-    image: "/project-images/hockey.png"
+    image: "/project-images/cup-chase.png",
+    imageAlt: "Light interface preview of the Cup Chase fantasy hockey dashboard"
+  },
+  {
+    title: "Info OS",
+    summary:
+      "A personal knowledge operating system that turns an information diet into durable notes, mental models, research artifacts, and data studies.",
+    details: [
+      "Connects Wiki inputs, Atlas mental models, portable artifacts, and a reusable public-data charting layer in one system.",
+      "Built around recurring research workflows rather than one-off dashboards.",
+      "The private operating environment stays separate from the public portfolio surface."
+    ],
+    stack: ["Next.js", "TypeScript", "Supabase", "Vercel"],
+    links: [],
+    image: "/project-images/info-os-light.png",
+    imageAlt: "Info OS light-mode newspaper interface preview"
   },
   {
     title: "Personal Dashboard",
@@ -81,20 +96,8 @@ const projects: Project[] = [
     ],
     stack: ["React", "Python", "FastAPI", "Local data"],
     links: [],
-    image: "/project-images/personal-dashboard.png"
-  },
-  {
-    title: "Financial Markets Dashboard",
-    summary:
-      "An early-stage finance workspace for market data, macro indicators, company financials, and visual mental models.",
-    details: [
-      "Intended to connect market data, company fundamentals, and macro context in one research workspace.",
-      "Current direction emphasizes reusable data pipelines, flexible charts, and finance-specific mental models.",
-      "Placeholder for now, but it has enough runway to become the most finance-native project on the site."
-    ],
-    stack: ["Python", "pandas", "Plotly", "Next.js"],
-    links: [],
-    image: "/project-images/htmls.png"
+    image: "/project-images/personal-dashboard-v2.png",
+    imageAlt: "Light interface preview of the Personal Dashboard training workspace"
   },
   {
     title: "Deck of Cards",
@@ -106,7 +109,8 @@ const projects: Project[] = [
     ],
     stack: ["JavaScript", "HTML", "CSS"],
     links: [{ label: "GitHub", href: "https://github.com/masonschick/Deck-of-cards" }],
-    imagePlaceholder: "Deck of Cards"
+    image: "/project-images/deck-of-cards.png",
+    imageAlt: "Light interface preview of the Deck of Cards browser project"
   }
 ];
 
@@ -124,35 +128,6 @@ const skills = [
   "Supabase",
   "Vercel"
 ];
-
-function ThemeToggle() {
-  const [theme, setThemeState] = useState(() => {
-    if (typeof document === "undefined") return "dark";
-    return document.documentElement.dataset.theme || "dark";
-  });
-
-  function setTheme(nextTheme: string) {
-    document.documentElement.dataset.theme = nextTheme;
-    localStorage.setItem("artifactHubTheme", nextTheme);
-    setThemeState(nextTheme);
-  }
-
-  return (
-    <div className="floating-actions" aria-label="Site actions">
-      <button
-        className="theme-button"
-        type="button"
-        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-        aria-pressed={theme === "dark"}
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      >
-        <span className="theme-glyph" aria-hidden="true">
-          {theme === "dark" ? "\u263e" : "\u263c"}
-        </span>
-      </button>
-    </div>
-  );
-}
 
 function LinkButton({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -196,7 +171,7 @@ function ProjectItem({ project }: { project: Project }) {
   const primaryLink = project.links[0];
 
   return (
-    <article className={`artifact project-card ${project.image || project.imagePlaceholder ? "has-image" : ""}`}>
+    <article className="artifact project-card has-image">
       <div className="artifact-main">
         <div className="artifact-heading">
           <h3 className="artifact-title">
@@ -224,21 +199,15 @@ function ProjectItem({ project }: { project: Project }) {
         </ul>
       </div>
       <aside className="artifact-side project-side">
-        {project.image ? <img className="project-image" src={project.image} alt={`${project.title} screenshot`} /> : null}
-        {!project.image && project.imagePlaceholder ? <div className="project-image project-image-placeholder">{project.imagePlaceholder}</div> : null}
+        <img className="project-image" src={project.image} alt={project.imageAlt} />
       </aside>
     </article>
   );
 }
 
 function App() {
-  useEffect(() => {
-    document.title = "Mason Schick";
-  }, []);
-
   return (
     <>
-      <ThemeToggle />
       <main className="shell">
         <section className="intro-panel" aria-labelledby="resume-heading">
           <div className="intro-copy">

@@ -117,39 +117,6 @@ a:hover {
   color: var(--accent-3);
 }
 
-.floating-actions {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 30;
-  display: flex;
-  gap: 8px;
-}
-
-.theme-button {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: hsl(var(--panel-h), var(--panel-s), var(--panel-l), var(--surface-alpha));
-  color: var(--accent);
-  padding: 0;
-}
-
-.theme-button:hover {
-  border-color: hsl(var(--accent-h), 45%, 48%, 0.5);
-  background: var(--accent-soft);
-}
-
-.theme-glyph {
-  display: block;
-  font-family: Georgia, Cambria, "Times New Roman", serif;
-  font-size: 23px;
-  line-height: 1;
-}
-
 .shell {
   width: min(var(--shell-max), calc(100% - 36px));
   margin: 0 auto;
@@ -429,22 +396,13 @@ p {
 .project-image {
   display: block;
   width: 100%;
-  aspect-ratio: 1.45;
+  aspect-ratio: 1.5;
   object-fit: cover;
   object-position: top;
   margin-top: 4px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel-2);
-}
-
-.project-image-placeholder {
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: var(--label-weight);
-  text-transform: uppercase;
 }
 
 .education-card {
@@ -491,11 +449,6 @@ p {
 }
 
 @media (max-width: 760px) {
-  .floating-actions {
-    top: 10px;
-    right: 10px;
-  }
-
   .shell {
     width: min(100% - 24px, var(--shell-max));
     padding-top: 28px;

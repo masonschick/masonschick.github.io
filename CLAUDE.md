@@ -6,7 +6,8 @@ Standalone public resume and portfolio site for Mason Schick. This is the PUBLIS
 
 - React 19 + TypeScript
 - Vite 6
-- Plain CSS using the shared Hub visual language and `artifactHubTheme` preference
+- Plain CSS using the shared Hub visual language
+- Automatic Chicago sunrise/sunset theme with no manual override
 
 ## Commands
 
@@ -29,3 +30,4 @@ Standalone public resume and portfolio site for Mason Schick. This is the PUBLIS
 - Do not publish private application data or links that require access to private GitHub repositories.
 - Prefer finished case studies over placeholder projects.
 - Keep the resume URL stable when the source PDF is updated.
+- Keep the four project visuals stylistically consistent; the Info OS light-mode preview is the reference image.

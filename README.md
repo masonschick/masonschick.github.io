@@ -19,9 +19,9 @@ The production output is written to `dist/`.
 
 ## Deployment
 
-The site is published at [masonschick.github.io](https://masonschick.github.io) from the `masonschick/masonschick.github.io` repository.
+The canonical site is [masonschick.vercel.app](https://masonschick.vercel.app).
 
-Pushes to `main` run `.github/workflows/deploy.yml`, which installs dependencies, builds the Vite app, and publishes `dist/` through GitHub Pages.
+Vercel is connected to the `masonschick/masonschick.github.io` repository. Pushes to `main` build and publish the production site automatically.
 
 The previous Jekyll/class site is preserved on the remote `legacy-2024` branch.
 

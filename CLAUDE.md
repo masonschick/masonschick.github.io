@@ -16,9 +16,10 @@ Standalone public resume and portfolio site for Mason Schick. This is the PUBLIS
 
 ## Deployment
 
-- Public URL: `https://masonschick.github.io`
+- Canonical public URL: `https://masonschick.vercel.app`
+- Hosting: Vercel project `personal-site`
 - Repository: `masonschick/masonschick.github.io`
-- GitHub Pages deploys `dist/` through `.github/workflows/deploy.yml` on pushes to `main`.
+- Pushes to `main` deploy automatically through Vercel.
 - The former Jekyll/class site is preserved on the remote `legacy-2024` branch.
 
 ## Working rules

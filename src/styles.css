@@ -412,6 +412,10 @@ p {
   transform: scale(1.035);
 }
 
+.project-image-markets {
+  transform: translateX(0.5%) scale(1.065);
+}
+
 .education-card {
   margin-top: 6px;
 }

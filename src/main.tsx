@@ -21,6 +21,7 @@ type Project = {
   links: { label: string; href: string }[];
   image: string;
   imageAlt: string;
+  imageClassName?: string;
 };
 
 const experiences: Experience[] = [
@@ -69,7 +70,8 @@ const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Supabase", "Vercel"],
     links: [{ label: "Live project", href: "https://info-os-sand.vercel.app/" }],
     image: "/project-images/info-os-light.png",
-    imageAlt: "Light interface preview of the Markets Research Platform"
+    imageAlt: "Light interface preview of the Markets Research Platform",
+    imageClassName: "project-image-markets"
   },
   {
     title: "Cup Chase",
@@ -200,7 +202,11 @@ function ProjectItem({ project }: { project: Project }) {
       </div>
       <aside className="artifact-side project-side">
         <div className="project-image-frame">
-          <img className="project-image" src={project.image} alt={project.imageAlt} />
+          <img
+            className={`project-image${project.imageClassName ? ` ${project.imageClassName}` : ""}`}
+            src={project.image}
+            alt={project.imageAlt}
+          />
         </div>
       </aside>
     </article>

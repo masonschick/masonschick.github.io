@@ -1,0 +1,29 @@
+# Personal Site
+
+Standalone public resume and portfolio site for Mason Schick. This is the PUBLISH layer adjacent to `info-os`, not a module inside it.
+
+## Stack
+
+- React 19 + TypeScript
+- Vite 6
+- Plain CSS using the shared Hub visual language and `artifactHubTheme` preference
+
+## Commands
+
+- `npm run dev` — local development
+- `npm run build` — type-check and production build
+- `npm run preview` — preview the production build
+
+## Deployment
+
+- Public URL: `https://masonschick.github.io`
+- Repository: `masonschick/masonschick.github.io`
+- GitHub Pages deploys `dist/` through `.github/workflows/deploy.yml` on pushes to `main`.
+- The former Jekyll/class site is preserved on the remote `legacy-2024` branch.
+
+## Working rules
+
+- Keep the site standalone; link to it from the resume and `info-os`.
+- Do not publish private application data or links that require access to private GitHub repositories.
+- Prefer finished case studies over placeholder projects.
+- Keep the resume URL stable when the source PDF is updated.

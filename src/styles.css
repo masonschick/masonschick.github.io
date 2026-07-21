@@ -394,6 +394,7 @@ p {
 }
 
 .project-image-frame {
+  display: block;
   width: 100%;
   aspect-ratio: 1.65;
   overflow: hidden;
@@ -401,6 +402,20 @@ p {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel-2);
+}
+
+.project-image-link {
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.project-image-link:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px hsl(var(--accent-h), 44%, 46%, 0.14);
+}
+
+.project-image-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .project-image {

@@ -61,7 +61,7 @@ const projects: Project[] = [
   {
     title: "Markets Research Platform",
     summary:
-      "A research platform for turning market information into structured notes, analytical frameworks, data studies, and decision-ready views.",
+      "A research platform for turning market information into structured notes, analytical frameworks, and data studies.",
     details: [
       "Connects market notes, mental models, research artifacts, public-data charting, and prediction-market signals in one system.",
       "Built around recurring workflows that link macro data, company analysis, policy expectations, and changing market narratives.",
@@ -76,43 +76,32 @@ const projects: Project[] = [
   {
     title: "Cup Chase",
     summary:
-      "A deployed fantasy hockey product with live data, league workflows, and a small group of active users.",
-    details: [
-      "Built around the actual league workflow: standings, roster context, player research, and manager-facing decisions.",
-      "Uses production-oriented pieces like authentication, database-backed state, and deployment through Vercel.",
-      "The public version will keep the interesting product shape while removing private league data."
-    ],
+      "A fantasy hockey web-app with live data, in-game updates, and a small group of active users.",
+    details: ["Built around the 2025-26 Stanley Cup Playoffs"],
     stack: ["Next.js", "Supabase", "Vercel", "TypeScript"],
     links: [{ label: "Live project", href: "https://hockey-eight.vercel.app/" }],
     image: "/project-images/cup-chase.png",
-    imageAlt: "Light interface preview of the Cup Chase fantasy hockey dashboard"
+    imageAlt: "X-Factor playoff bracket with the Carolina Hurricanes shown as champions"
   },
   {
     title: "Personal Dashboard",
     summary:
-      "A local operating dashboard for goals, training, and daily focus, including marathon preparation workflows.",
-    details: [
-      "Combines planning, habit tracking, and progress review into a personal command center.",
-      "Used as a real training tool for marathon preparation rather than as a purely demo-oriented app.",
-      "The public version will use dummy data and a simpler surface so the structure is visible without exposing personal logs."
-    ],
+      "A local dashboard for personal goals, health and fitness, investments, and budgeting.",
+    details: [],
     stack: ["React", "Python", "FastAPI", "Local data"],
     links: [],
-    image: "/project-images/personal-dashboard-v2.png",
-    imageAlt: "Light interface preview of the Personal Dashboard training workspace"
+    image: "/project-images/personal-dashboard.png",
+    imageAlt: "Personal Dashboard preview with calendar, investment graph, and budget bars"
   },
   {
     title: "Deck of Cards",
     summary:
-      "A simple first coding project that marks the beginning of the software-building thread.",
-    details: [
-      "Kept intentionally modest: it shows the starting point before the larger app and dashboard work.",
-      "Useful as a timestamped artifact of learning in public and getting comfortable shipping small interfaces."
-    ],
+      "My first useful piece of software, created entirely with GPT-4o.",
+    details: ["Unintentional purple gradient is intentionally on display"],
     stack: ["JavaScript", "HTML", "CSS"],
     links: [{ label: "GitHub", href: "https://github.com/masonschick/Deck-of-cards" }],
     image: "/project-images/deck-of-cards.png",
-    imageAlt: "Light interface preview of the Deck of Cards browser project"
+    imageAlt: "Purple Deck of Cards workout preview showing fifteen push-ups"
   }
 ];
 
@@ -171,6 +160,13 @@ function ExperienceItem({ item }: { item: Experience }) {
 
 function ProjectItem({ project }: { project: Project }) {
   const primaryLink = project.links[0];
+  const projectImage = (
+    <img
+      className={`project-image${project.imageClassName ? ` ${project.imageClassName}` : ""}`}
+      src={project.image}
+      alt={project.imageAlt}
+    />
+  );
 
   return (
     <article className="artifact project-card has-image">
@@ -201,13 +197,19 @@ function ProjectItem({ project }: { project: Project }) {
         </ul>
       </div>
       <aside className="artifact-side project-side">
-        <div className="project-image-frame">
-          <img
-            className={`project-image${project.imageClassName ? ` ${project.imageClassName}` : ""}`}
-            src={project.image}
-            alt={project.imageAlt}
-          />
-        </div>
+        {primaryLink ? (
+          <a
+            className="project-image-frame project-image-link"
+            href={primaryLink.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${project.title}`}
+          >
+            {projectImage}
+          </a>
+        ) : (
+          <div className="project-image-frame">{projectImage}</div>
+        )}
       </aside>
     </article>
   );

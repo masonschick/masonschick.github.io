@@ -81,7 +81,8 @@ const projects: Project[] = [
     stack: ["Next.js", "Supabase", "Vercel", "TypeScript"],
     links: [{ label: "Live project", href: "https://hockey-eight.vercel.app/" }],
     image: "/project-images/cup-chase.png",
-    imageAlt: "X-Factor playoff bracket with the Carolina Hurricanes shown as champions"
+    imageAlt: "X-Factor playoff bracket with the Carolina Hurricanes shown as champions",
+    imageClassName: "project-image-hockey"
   },
   {
     title: "Personal Dashboard",

@@ -390,8 +390,7 @@ p {
   margin: 14px 0 0;
 }
 
-.compact-tags .tag-filter,
-.skill-list .tag-filter {
+.compact-tags .tag-filter {
   min-height: 32px;
   padding: 5px 10px;
   font-size: 13px;
@@ -449,14 +448,6 @@ p {
 
 .education-logo {
   object-fit: cover;
-}
-
-.closing-grid {
-  padding-bottom: 20px;
-}
-
-.skill-list {
-  margin-bottom: 0;
 }
 
 @media (max-width: 860px) {

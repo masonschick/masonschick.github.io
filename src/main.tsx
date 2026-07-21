@@ -106,21 +106,6 @@ const projects: Project[] = [
   }
 ];
 
-const skills = [
-  "Python",
-  "pandas",
-  "Plotly",
-  "Excel",
-  "Financial modeling",
-  "Bloomberg Terminal",
-  "Risk analytics",
-  "Data visualization",
-  "React",
-  "Next.js",
-  "Supabase",
-  "Vercel"
-];
-
 function LinkButton({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a className="tag-filter link-chip" href={href} target={href.startsWith("mailto:") ? undefined : "_blank"} rel="noreferrer">
@@ -311,18 +296,6 @@ function App() {
           </div>
         </section>
 
-        <section className="section-block closing-grid" aria-labelledby="skills-heading">
-          <div className="section-heading">
-            <h2 id="skills-heading">Tools I reach for</h2>
-          </div>
-          <div className="tagbar skill-list" aria-label="Skills">
-            {skills.map((skill) => (
-              <span className="tag-filter static-chip" key={skill}>
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
       </main>
     </>
   );

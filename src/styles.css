@@ -378,6 +378,10 @@ p {
   grid-template-columns: minmax(0, 1fr) 280px;
 }
 
+.project-card .summary {
+  margin-top: 4px;
+}
+
 .project-side {
   align-content: start;
 }

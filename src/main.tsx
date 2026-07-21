@@ -74,9 +74,9 @@ const projects: Project[] = [
     imageClassName: "project-image-markets"
   },
   {
-    title: "Cup Chase",
+    title: "Fantasy Hockey Web App",
     summary:
-      "A fantasy hockey web-app with live data, in-game updates, and a small group of active users.",
+      "A fantasy hockey web app with live data, in-game updates, and a small group of active users.",
     details: ["Built around the 2025-26 Stanley Cup Playoffs"],
     stack: ["Next.js", "Supabase", "Vercel", "TypeScript"],
     links: [{ label: "Live project", href: "https://hockey-eight.vercel.app/" }],
@@ -97,7 +97,7 @@ const projects: Project[] = [
     title: "Deck of Cards",
     summary:
       "My first useful piece of software, created entirely with GPT-4o.",
-    details: ["Unintentional purple gradient is intentionally on display"],
+    details: [],
     stack: ["JavaScript", "HTML", "CSS"],
     links: [{ label: "GitHub", href: "https://github.com/masonschick/Deck-of-cards" }],
     image: "/project-images/deck-of-cards.png",
@@ -190,11 +190,13 @@ function ProjectItem({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <ul className="detail-list project-detail-list">
-          {project.details.slice(0, 1).map((detail) => (
-            <li key={detail}>{detail}</li>
-          ))}
-        </ul>
+        {project.details.length > 0 ? (
+          <ul className="detail-list project-detail-list">
+            {project.details.slice(0, 1).map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        ) : null}
       </div>
       <aside className="artifact-side project-side">
         {primaryLink ? (
